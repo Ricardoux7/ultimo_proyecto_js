@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <script src="registrar.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#EFFDF7]">
+    <section class="bg-white rounded-lg w-[80vw] mx-auto h-[auto] md:w-[50vw] translate-y-[10%] md:translate-y-[1%] flex flex-col border shadow-lg">
+        <form class="flex flex-col" id="registro-form">
+            <div class="flex items-center justify-center mx-auto rounded-full bg-[#0FAB83] w-20 h-20 mt-[5%]">
+                <img src="./Icons/add-user.svg" alt="" class="object-contain w-16 h-16">
+            </div>
+            <p class="font-bold text-md text-[#0FAB83] text-center">Crea tu cuenta</p>
+            <label for="user" class="font-bold ml-[5%] text-md text-gray-800 mt-[5%]">Nombre de usuario
+                <input type="text" id="user" name="user" class="w-[90%] mx-auto rounded-lg h-[5vh] border border-grey focus:outline-none focus:border-[#0E9D88] focus:border-2 min-h-[6vh]" placeholder="Nombre Usuario" required>
+            </label>
+            <label for="correo" class="font-bold ml-[5%] text-md text-gray-800 mt-[5%]">Correo Electronico
+                <input type="email" id="correo" name="correo" class="w-[90%] mx-auto rounded-lg h-[5vh] border border-grey focus:outline-none focus:border-[#0E9D88] focus:border-2 min-h-[6vh]" placeholder="Correo@gmail.com" required>
+            </label>
+            <label for="contrasena" class="font-bold ml-[5%] text-md text-gray-800 mt-[5%]">Crear Contrasena
+                <input type="password" id="contrasena" name="contrasena" class="w-[90%] mx-auto rounded-lg h-[5vh] border border-grey focus:outline-none focus:border-[#0E9D88] focus:border-2 min-h-[6vh]" placeholder="Contrasena" required>
+            </label>
+            <label for="confirmar-password" class="font-bold ml-[5%] text-md text-gray-800 mt-[5%]">Confirmar Contrasena
+                <input type="password" id="confirmar-password" name="confirmar-password" class="w-[90%] mx-auto rounded-lg h-[5vh] border border-grey focus:outline-none focus:border-[#0E9D88] focus:border-2 min-h-[6vh]" placeholder="Confirmar Contrasena" required>
+            </label>
+            <button type="submit" class="bg-[#0E9D88] rounded-lg w-[90%] h-[5vh] mx-auto text-white font-bold mb-[5%] min-h-[5vh] mt-[8%]" id="registrar">Crear Cuenta</button>
+            <p class="text-center">Ya tienes una cuenta?<a href="" class="text-[#0E9D88]">Iniciar Sesion</a></p>
+        </form>
+        <div id="mensajes"></div>
+    </section>
+</body>
+</html>

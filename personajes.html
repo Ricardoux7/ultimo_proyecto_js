@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personajes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#EFFDF7]">
+    <nav class="min-h-[10vh] max-h-[10vh] shadow-sm flex items-center fixed z-10 w-[100%] bg-[#0FAB83] bg-opacity-90 top-0 left-0">
+        <div class="mx-auto flex justify-center gap-4">
+            <button class="text-[#000000] flex items-center">
+                <img src="./Icons/heart.svg" alt="" class="w-[25px]">Favoritos
+            </button>
+            <button class="text-[#000000] flex items-center">
+                <img src="./Icons/user.svg" alt="" class="w-[25px]">Perfil
+            </button>
+            <button class="text-[#000000] flex items-center" onclick="salir()">
+                <img src="./Icons/log-out.svg" alt="" class="w-[25px]">Salir
+            </button>
+        </div>
+    </nav>
+    <section id="personajes" class="bg-[#99ff33] rounded-lg w-[80vw] mx-auto h-[auto] flex flex-col grid grid-cols-1 md:grid-cols-4 gap-4 mt-28 p-4">
+        <h1 class="text-[#0FAB83] font-bold text-[30px]">Personajes</h1>
+    </section>
+    <script src="personajes.js"></script>
+</body>
+</html>
