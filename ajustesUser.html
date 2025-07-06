@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-[#3a1d6c] to-[#1C2D6E]">
+    <nav class="min-h-[10vh] max-h-[10vh] shadow-sm flex justify-between items-center z-10 w-[100%] bg-gradient-to-r from-[#3a1d6c] to-[#1C2D6E] bg-opacity-10 border-b-2 border-[#0FAB83]">
+        <img src="./Icons/Rick_and_Morty.webp" alt="Rick-and-Morty" class="w-[150px] h-[50px] ml-4">
+        <div class=" flex justify-center gap-4 mr-4">
+            <button class="text-[#000000] flex items-center" onclick="inicio()">
+                <img src="./Icons/house.svg" alt="" class="w-[25px]">
+                <p class="text-white">Inicio</p>
+            </button>
+            <button class="text-[#000000] flex items-center" onclick="favoritos()">
+                <img src="./Icons/heart.svg" alt="" class="w-[25px]">
+                <p class="text-white">Favoritos</p>
+            </button>
+            <button class="text-[#000000] flex items-center" onclick="salir()">
+                <img src="./Icons/log-out.svg" alt="" class="w-[25px]">
+                <p class="text-white">Salir</p>
+            </button>
+        </div>
+    </nav>
+    <main class="flex flex-col justify-start items-center h-[80vh] w-[80vw] mx-auto bg-gradient-to-br from-[#3a1d6c] to-[#1C2D6E] border-[2px] border-[#0FAB83] rounded-lg mt-[5%]">
+        <h1 class="text-center text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#7FF500] to-[#3FAEC4] my-4">Ajustes de usuario</h1>
+        <form action="edit" id="formAjustes" class="w-[80%] mx-auto flex flex-col gap-4">
+            <label for="name">
+                <p class="text-white font-bold">Nombre</p>
+                <div class="flex items-center justify-between gap-2">
+                    <input disabled type="text" name="name" id="ajustesNombre" class="w-full mx-auto rounded-lg border border-grey focus:outline-none focus:border-[#0E9D88] focus:border-2 min-h-[5vh] focus:bg-[#F8F9FA] font-bold text-[#212529]">
+                    <button type="button" class="text-[#0FAB83] bg-[#3a1d6c] border-[#0E9D88] rounded-lg p-2 font-bold" name="editar">Editar</button>
+                </div>
+            </label>
+            <label for="email">
+                <p class="text-white font-bold">Email</p>
+                <div class="flex items-center justify-between gap-2">
+                    <input disabled type="email" name="email" id="ajustesEmail" class="w-full mx-auto rounded-lg border border-grey focus:outline-none focus:border-[#0E9D88] focus:border-2 min-h-[5vh] focus:bg-[#F8F9FA] font-bold text-[#212529]">
+                    <button type="button" class="text-[#0FAB83] bg-[#3a1d6c] border-[#0E9D88] rounded-lg p-2 font-bold" name="editar">Editar</button>
+                </div>
+            </label>
+            <label for="telefono">
+                <p class="text-white font-bold">Telefono</p>
+                <div class="flex items-center justify-between gap-2">
+                    <input disabled type="number" name="telefono" id="ajustesTelefono" class="w-full mx-auto rounded-lg border border-grey focus:outline-none focus:border-[#0E9D88] focus:border-2 min-h-[5vh] focus:bg-[#F8F9FA] font-bold text-[#212529]">
+                    <button type="button" class="text-[#0FAB83] bg-[#3a1d6c] border-[#0E9D88] rounded-lg p-2 font-bold" name="editar">Editar</button>
+                </div>
+            </label>
+            <label for="password">
+                <p class="text-white font-bold">Contraseña</p>
+                <div class="flex items-center justify-between gap-2">
+                    <input disabled type="password" name="password" id="ajustesPassword" class="w-full mx-auto rounded-lg border border-grey focus:outline-none focus:border-[#0E9D88] focus:border-2 min-h-[5vh] focus:bg-[#F8F9FA] font-bold text-[#212529]">
+                    <button type="button" class="text-[#0FAB83] bg-[#3a1d6c] border-[#0E9D88] rounded-lg p-2 font-bold" name="editar">Editar</button>
+                </div>
+            </label>
+            <label for="confirmar-password">
+                <p class="text-white font-bold">Confirmar Contraseña</p>
+                <div class="flex items-center justify-between gap-2">
+                    <input disabled type="password" name="confirmar-password" id="ajustesConfirmarPassword" class="w-full mx-auto rounded-lg border border-grey focus:outline-none focus:border-[#0E9D88] focus:border-2 min-h-[5vh] focus:bg-[#F8F9FA] font-bold text-[#212529]">
+                    <button type="button" class="text-[#0FAB83] bg-[#3a1d6c] border-[#0E9D88] rounded-lg p-2 font-bold" name="editar">Editar</button>
+                </div>
+            </label>
+            <button type="submit" class="bg-[#3a1d6c] border-[#0E9D88] rounded-lg p-2 font-bold text-[#0FAB83] my-[1rem] mx-auto">Guardar</button>
+        </form>
+    </main>
+    <script src="./ajustesUser.js"></script>
+    <script src="./registrar.js"></script>
+    <script src="./iniciarSesion.js"></script>
+</body>
+</html>
